@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@protocol BirdProtocol;
+#import "BirdProtocol.h"
 @class Raven;
 
 @interface RavenAdapter : NSObject <BirdProtocol>

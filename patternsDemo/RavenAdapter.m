@@ -7,7 +7,6 @@
 //
 
 #import "RavenAdapter.h"
-#import "BirdProtocol.h"
 #import "Raven.h"
 
 @interface RavenAdapter ()
