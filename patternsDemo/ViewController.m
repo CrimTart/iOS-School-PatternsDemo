@@ -10,6 +10,10 @@
 #import "Singleton.h"
 #import "Button.h"
 #import "Observer.h"
+#import "PlainPrinter.h"
+#import "PrinterDecorator.h"
+#import "Raven.h"
+#import "RavenAdapter.h"
 @import UIKit;
 
 @interface ViewController () <ObserverProtocol>
@@ -51,11 +55,23 @@
 }
 
 -(void) buttonClick: (UIButton *)sender {
+    //1//
     //Use breakpoints to check singleton's single time creation
     //[Singleton sharedInstance];
+    /*2
     [_observer sendEvent:EventTypeAddItem];
     [_observer sendEvent:EventTypeAddItem];
-    [_observer sendEvent:EventTypeRemoveItem];
+    [_observer sendEvent:EventTypeRemoveItem];*/
+    /*3
+    NSString *test = @"I like turtles";
+    PlainPrinter *printer = [PlainPrinter new];
+    printer.string = test;
+    PrinterDecorator *decorator = [[PrinterDecorator alloc] initWithPrinter:printer];
+    [decorator printString];*/
+    Raven *raven = [Raven new];
+    RavenAdapter *adapter = [[RavenAdapter alloc] initWithRaven:raven];
+    [adapter fly];
+    [adapter sing];
 }
 
 -(void) observe: (NSNotification *)notification {

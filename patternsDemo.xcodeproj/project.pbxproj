@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0452DAF21EF9867100424123 /* PlainPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0452DAF11EF9867100424123 /* PlainPrinter.m */; };
+		0452DAF51EF987E500424123 /* PrinterDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0452DAF41EF987E500424123 /* PrinterDecorator.m */; };
+		0452DAFA1EF98D6700424123 /* Raven.m in Sources */ = {isa = PBXBuildFile; fileRef = 0452DAF91EF98D6700424123 /* Raven.m */; };
+		0452DAFD1EF98E1200424123 /* RavenAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0452DAFC1EF98E1200424123 /* RavenAdapter.m */; };
 		04EEBD251EF5235700D5F99A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBD241EF5235700D5F99A /* main.m */; };
 		04EEBD281EF5235700D5F99A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBD271EF5235700D5F99A /* AppDelegate.m */; };
 		04EEBD2B1EF5235700D5F99A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBD2A1EF5235700D5F99A /* ViewController.m */; };
@@ -33,6 +37,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0452DAEF1EF9864800424123 /* StringPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringPrinter.h; sourceTree = "<group>"; };
+		0452DAF01EF9867100424123 /* PlainPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPrinter.h; sourceTree = "<group>"; };
+		0452DAF11EF9867100424123 /* PlainPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPrinter.m; sourceTree = "<group>"; };
+		0452DAF31EF987E500424123 /* PrinterDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterDecorator.h; sourceTree = "<group>"; };
+		0452DAF41EF987E500424123 /* PrinterDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterDecorator.m; sourceTree = "<group>"; };
+		0452DAF71EF98D2A00424123 /* BirdProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BirdProtocol.h; sourceTree = "<group>"; };
+		0452DAF81EF98D6700424123 /* Raven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Raven.h; sourceTree = "<group>"; };
+		0452DAF91EF98D6700424123 /* Raven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Raven.m; sourceTree = "<group>"; };
+		0452DAFB1EF98E1200424123 /* RavenAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenAdapter.h; sourceTree = "<group>"; };
+		0452DAFC1EF98E1200424123 /* RavenAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenAdapter.m; sourceTree = "<group>"; };
 		04EEBD201EF5235700D5F99A /* patternsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = patternsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EEBD241EF5235700D5F99A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04EEBD261EF5235700D5F99A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +92,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0452DAEE1EF985C100424123 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				0452DAEF1EF9864800424123 /* StringPrinter.h */,
+				0452DAF01EF9867100424123 /* PlainPrinter.h */,
+				0452DAF11EF9867100424123 /* PlainPrinter.m */,
+				0452DAF31EF987E500424123 /* PrinterDecorator.h */,
+				0452DAF41EF987E500424123 /* PrinterDecorator.m */,
+			);
+			name = Decorator;
+			sourceTree = "<group>";
+		};
+		0452DAF61EF98CD700424123 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				0452DAF71EF98D2A00424123 /* BirdProtocol.h */,
+				0452DAF81EF98D6700424123 /* Raven.h */,
+				0452DAF91EF98D6700424123 /* Raven.m */,
+				0452DAFB1EF98E1200424123 /* RavenAdapter.h */,
+				0452DAFC1EF98E1200424123 /* RavenAdapter.m */,
+			);
+			name = Adapter;
+			sourceTree = "<group>";
+		};
 		04EEBD171EF5235700D5F99A = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +137,8 @@
 		04EEBD221EF5235700D5F99A /* patternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0452DAF61EF98CD700424123 /* Adapter */,
+				0452DAEE1EF985C100424123 /* Decorator */,
 				04EEBD8D1EF53E6C00D5F99A /* Observer */,
 				04EEBD571EF5355F00D5F99A /* Abstract Factory */,
 				04EEBD581EF535A600D5F99A /* Singleton */,
@@ -270,10 +310,14 @@
 				04EEBD2B1EF5235700D5F99A /* ViewController.m in Sources */,
 				04EEBD4A1EF523D700D5F99A /* Singleton.m in Sources */,
 				04EEBD531EF52E1200D5F99A /* AddButton.m in Sources */,
+				0452DAF21EF9867100424123 /* PlainPrinter.m in Sources */,
 				04EEBD5B1EF536D400D5F99A /* Observer.m in Sources */,
 				04EEBD561EF52E2600D5F99A /* RemoveButton.m in Sources */,
+				0452DAFA1EF98D6700424123 /* Raven.m in Sources */,
+				0452DAFD1EF98E1200424123 /* RavenAdapter.m in Sources */,
 				04EEBD4D1EF52BA500D5F99A /* Button.m in Sources */,
 				04EEBD501EF52DFC00D5F99A /* DefaultButton.m in Sources */,
+				0452DAF51EF987E500424123 /* PrinterDecorator.m in Sources */,
 				04EEBD281EF5235700D5F99A /* AppDelegate.m in Sources */,
 				04EEBD251EF5235700D5F99A /* main.m in Sources */,
 			);
@@ -472,6 +516,7 @@
 				04EEBD441EF5235700D5F99A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04EEBD451EF5235700D5F99A /* Build configuration list for PBXNativeTarget "patternsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +525,7 @@
 				04EEBD471EF5235700D5F99A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
