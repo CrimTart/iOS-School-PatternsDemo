@@ -14,6 +14,10 @@
 #import "PrinterDecorator.h"
 #import "Raven.h"
 #import "RavenAdapter.h"
+#import "Context.h"
+#import "StrategyAdd.h"
+#import "StrategySubstract.h"
+#import "StrategyMultiply.h"
 @import UIKit;
 
 @interface ViewController () <ObserverProtocol>
@@ -55,23 +59,36 @@
 }
 
 -(void) buttonClick: (UIButton *)sender {
-    //1//
+    /* 1
     //Use breakpoints to check singleton's single time creation
-    //[Singleton sharedInstance];
-    /*2
+    [Singleton sharedInstance]; */
+    
+    /* 2
     [_observer sendEvent:EventTypeAddItem];
     [_observer sendEvent:EventTypeAddItem];
-    [_observer sendEvent:EventTypeRemoveItem];*/
-    /*3
+    [_observer sendEvent:EventTypeRemoveItem]; */
+    
+    /* 3
     NSString *test = @"I like turtles";
     PlainPrinter *printer = [PlainPrinter new];
     printer.string = test;
     PrinterDecorator *decorator = [[PrinterDecorator alloc] initWithPrinter:printer];
-    [decorator printString];*/
+    [decorator printString]; */
+    
+    /* 4
     Raven *raven = [Raven new];
     RavenAdapter *adapter = [[RavenAdapter alloc] initWithRaven:raven];
     [adapter fly];
-    [adapter sing];
+    [adapter sing]; */
+    
+    /* 5
+    Context *context = [Context new];
+    context.strategy = [StrategyAdd new];
+    NSLog(@"%d", [context executeStrategyWithA:2 B:3]);
+    context.strategy = [StrategySubstract new];
+    NSLog(@"%d", [context executeStrategyWithA:2 B:3]);
+    context.strategy = [StrategyMultiply new];
+    NSLog(@"%d", [context executeStrategyWithA:2 B:3]); */
 }
 
 -(void) observe: (NSNotification *)notification {
@@ -80,7 +97,7 @@
 
 #pragma mark - ObserverProtocol
 
--(void) didRecieveEvent:(EventType)type {
+-(void) didRecieveEvent: (EventType)type {
     NSLog(@"%@", @(type));
 }
 

@@ -10,7 +10,7 @@
 
 @implementation Raven
 
--(void) flySeekAndDestroy{
+-(void) flySeekAndDestroy {
     NSLog(@"Angry flight!!");
 }
 
