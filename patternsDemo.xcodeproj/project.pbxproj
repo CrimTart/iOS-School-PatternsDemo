@@ -14,6 +14,12 @@
 		04EEBD301EF5235700D5F99A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EEBD2F1EF5235700D5F99A /* Assets.xcassets */; };
 		04EEBD331EF5235700D5F99A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EEBD311EF5235700D5F99A /* LaunchScreen.storyboard */; };
 		04EEBD3E1EF5235700D5F99A /* patternsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBD3D1EF5235700D5F99A /* patternsDemoTests.m */; };
+		04EEBD4A1EF523D700D5F99A /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBD491EF523D700D5F99A /* Singleton.m */; };
+		04EEBD4D1EF52BA500D5F99A /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBD4C1EF52BA500D5F99A /* Button.m */; };
+		04EEBD501EF52DFC00D5F99A /* DefaultButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBD4F1EF52DFC00D5F99A /* DefaultButton.m */; };
+		04EEBD531EF52E1200D5F99A /* AddButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBD521EF52E1200D5F99A /* AddButton.m */; };
+		04EEBD561EF52E2600D5F99A /* RemoveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBD551EF52E2600D5F99A /* RemoveButton.m */; };
+		04EEBD5B1EF536D400D5F99A /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBD5A1EF536D400D5F99A /* Observer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,18 @@
 		04EEBD391EF5235700D5F99A /* patternsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = patternsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EEBD3D1EF5235700D5F99A /* patternsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = patternsDemoTests.m; sourceTree = "<group>"; };
 		04EEBD3F1EF5235700D5F99A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EEBD481EF523D700D5F99A /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		04EEBD491EF523D700D5F99A /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		04EEBD4B1EF52BA500D5F99A /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Button.h; path = ../Button.h; sourceTree = "<group>"; };
+		04EEBD4C1EF52BA500D5F99A /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Button.m; path = ../Button.m; sourceTree = "<group>"; };
+		04EEBD4E1EF52DFC00D5F99A /* DefaultButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultButton.h; sourceTree = "<group>"; };
+		04EEBD4F1EF52DFC00D5F99A /* DefaultButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultButton.m; sourceTree = "<group>"; };
+		04EEBD511EF52E1200D5F99A /* AddButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddButton.h; sourceTree = "<group>"; };
+		04EEBD521EF52E1200D5F99A /* AddButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddButton.m; sourceTree = "<group>"; };
+		04EEBD541EF52E2600D5F99A /* RemoveButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveButton.h; sourceTree = "<group>"; };
+		04EEBD551EF52E2600D5F99A /* RemoveButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveButton.m; sourceTree = "<group>"; };
+		04EEBD591EF536D400D5F99A /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		04EEBD5A1EF536D400D5F99A /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +99,9 @@
 		04EEBD221EF5235700D5F99A /* patternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04EEBD8D1EF53E6C00D5F99A /* Observer */,
+				04EEBD571EF5355F00D5F99A /* Abstract Factory */,
+				04EEBD581EF535A600D5F99A /* Singleton */,
 				04EEBD261EF5235700D5F99A /* AppDelegate.h */,
 				04EEBD271EF5235700D5F99A /* AppDelegate.m */,
 				04EEBD291EF5235700D5F99A /* ViewController.h */,
@@ -109,6 +130,39 @@
 				04EEBD3F1EF5235700D5F99A /* Info.plist */,
 			);
 			path = patternsDemoTests;
+			sourceTree = "<group>";
+		};
+		04EEBD571EF5355F00D5F99A /* Abstract Factory */ = {
+			isa = PBXGroup;
+			children = (
+				04EEBD4B1EF52BA500D5F99A /* Button.h */,
+				04EEBD4C1EF52BA500D5F99A /* Button.m */,
+				04EEBD4E1EF52DFC00D5F99A /* DefaultButton.h */,
+				04EEBD4F1EF52DFC00D5F99A /* DefaultButton.m */,
+				04EEBD511EF52E1200D5F99A /* AddButton.h */,
+				04EEBD521EF52E1200D5F99A /* AddButton.m */,
+				04EEBD541EF52E2600D5F99A /* RemoveButton.h */,
+				04EEBD551EF52E2600D5F99A /* RemoveButton.m */,
+			);
+			name = "Abstract Factory";
+			sourceTree = "<group>";
+		};
+		04EEBD581EF535A600D5F99A /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				04EEBD481EF523D700D5F99A /* Singleton.h */,
+				04EEBD491EF523D700D5F99A /* Singleton.m */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		04EEBD8D1EF53E6C00D5F99A /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				04EEBD591EF536D400D5F99A /* Observer.h */,
+				04EEBD5A1EF536D400D5F99A /* Observer.m */,
+			);
+			name = Observer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +268,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				04EEBD2B1EF5235700D5F99A /* ViewController.m in Sources */,
+				04EEBD4A1EF523D700D5F99A /* Singleton.m in Sources */,
+				04EEBD531EF52E1200D5F99A /* AddButton.m in Sources */,
+				04EEBD5B1EF536D400D5F99A /* Observer.m in Sources */,
+				04EEBD561EF52E2600D5F99A /* RemoveButton.m in Sources */,
+				04EEBD4D1EF52BA500D5F99A /* Button.m in Sources */,
+				04EEBD501EF52DFC00D5F99A /* DefaultButton.m in Sources */,
 				04EEBD281EF5235700D5F99A /* AppDelegate.m in Sources */,
 				04EEBD251EF5235700D5F99A /* main.m in Sources */,
 			);
