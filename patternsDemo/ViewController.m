@@ -21,7 +21,7 @@
 @implementation ViewController
 
 -(void) dealloc {
-    [_observer removeObservers];
+    [_observer removeAllObservers];
 }
 
 - (void)viewDidLoad {
