@@ -29,7 +29,7 @@
     return self;
 }
 
--(void) addObserver:(id<ObserverProtocol>)observer forEvent:(EventType)type {
+-(void) addObserver: (id<ObserverProtocol>)observer forEvent: (EventType)type {
     switch (type) {
         case EventTypeAddItem: {
             [_addobservers addObject:observer];
@@ -46,7 +46,7 @@
     }
 }
 
--(void) removeObserver:(id<ObserverProtocol>)observer forEvent:(EventType)type{
+-(void) removeObserver: (id<ObserverProtocol>)observer forEvent:(EventType)type {
     switch (type) {
         case EventTypeAddItem: {
             [_addobservers removeObject:observer];
@@ -69,7 +69,7 @@
     [_updateobservers removeAllObjects];
 }
 
--(void) sendEvent:(EventType)type {
+-(void) sendEvent: (EventType)type {
     switch (type) {
         case EventTypeAddItem: {
             [_addobservers.allObjects enumerateObjectsUsingBlock:^(id<ObserverProtocol>  _Nonnull observer, NSUInteger idx, BOOL * _Nonnull stop) {

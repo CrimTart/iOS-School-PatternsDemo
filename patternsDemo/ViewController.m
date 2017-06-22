@@ -32,7 +32,7 @@
     [_observer removeAllObservers];
 }
 
-- (void)viewDidLoad {
+-(void) viewDidLoad {
     [super viewDidLoad];
     [Singleton sharedInstance];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -59,29 +59,29 @@
 }
 
 -(void) buttonClick: (UIButton *)sender {
-    /* 1
+    /* 1. Singleton
     //Use breakpoints to check singleton's single time creation
     [Singleton sharedInstance]; */
     
-    /* 2
+    /* 2. Observer
     [_observer sendEvent:EventTypeAddItem];
     [_observer sendEvent:EventTypeAddItem];
     [_observer sendEvent:EventTypeRemoveItem]; */
     
-    /* 3
+    /* 3. Decorator
     NSString *test = @"I like turtles";
     PlainPrinter *printer = [PlainPrinter new];
     printer.string = test;
     PrinterDecorator *decorator = [[PrinterDecorator alloc] initWithPrinter:printer];
     [decorator printString]; */
     
-    /* 4
+    /* 4. Adapter
     Raven *raven = [Raven new];
     RavenAdapter *adapter = [[RavenAdapter alloc] initWithRaven:raven];
     [adapter fly];
     [adapter sing]; */
     
-    /* 5
+    /* 5. Strategy
     Context *context = [Context new];
     context.strategy = [StrategyAdd new];
     NSLog(@"%d", [context executeStrategyWithA:2 B:3]);
