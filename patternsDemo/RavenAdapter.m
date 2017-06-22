@@ -17,7 +17,7 @@
 
 @implementation RavenAdapter
 
--(instancetype)initWithRaven:(Raven *)raven {
+-(instancetype) initWithRaven: (Raven *)raven {
     self = [super init];
     if (self) {
         _raven = raven;

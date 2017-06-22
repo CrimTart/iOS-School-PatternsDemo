@@ -11,7 +11,7 @@
 
 @implementation Context
 
--(int)executeStrategyWithA:(int)a B:(int)b {
+-(int) executeStrategyWithA: (int)a B: (int)b {
     return [self.strategy executeWithA:a B:b];
 }
 

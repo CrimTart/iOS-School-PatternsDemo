@@ -16,7 +16,7 @@
 
 @implementation PrinterDecorator
 
--(instancetype) initWithPrinter:(id<StringPrinter>)printer {
+-(instancetype) initWithPrinter: (id<StringPrinter>)printer {
     self = [super init];
     if(self) {
         _printer = printer;

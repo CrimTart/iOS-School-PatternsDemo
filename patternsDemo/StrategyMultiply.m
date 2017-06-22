@@ -10,7 +10,7 @@
 
 @implementation StrategyMultiply
 
--(int)executeWithA:(int)a B:(int)b {
+-(int) executeWithA: (int)a B: (int)b {
     return a * b;
 }
 

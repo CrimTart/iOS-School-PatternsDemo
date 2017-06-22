@@ -13,6 +13,6 @@
 
 @property (nonatomic, copy) NSString *string;
 
--(instancetype) initWithPrinter:(id<StringPrinter>)printer;
+-(instancetype) initWithPrinter: (id<StringPrinter>)printer;
 
 @end

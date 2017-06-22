@@ -11,6 +11,6 @@
 -(void) printString;
 
 -(void) setString: (NSString *)string;
--(NSString *)string;
+-(NSString *) string;
 
 @end
